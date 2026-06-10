@@ -99,6 +99,12 @@ The Tip Calculator should be responsive across all devices.
 <link rel="manifest" href="/assets/favicons/site.webmanifest" />
 ```
 
+## Duration
+```css
+--motion-duration: 4s;
+--motion-preferred-duration: 0.00001s;
+```
+
 ## Typography
 
 ```html
@@ -294,9 +300,9 @@ a:not([class]) {
   *,
   *::before,
   *::after {
-    animation-duration: 0.01ms !important;
+    animation-duration: var(--motion-preferred-duration) !important;
     animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
+    transition-duration: var(--motion-preferred-duration) !important;
     scroll-behavior: auto !important;
   }
 }
