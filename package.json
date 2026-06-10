@@ -3,9 +3,8 @@
   "version": "1.0.0",
   "description": "![Design preview for the Tip calculator app coding challenge](./preview.jpg)",
   "source": "index.html",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "browserslist": "> 0.3%, last 2 versions, Firefox ESR, not dead",
+  "scripts": {},
   "keywords": [
     "HTML",
     "CSS",
@@ -15,5 +14,8 @@
     "Prettier"
   ],
   "author": "Damilola Ikuomola",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "open-props": "^1.7.23"
+  }
 }
