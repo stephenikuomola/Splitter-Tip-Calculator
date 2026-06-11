@@ -32,7 +32,8 @@
     "name": "tip-calculator-app-main",
     "scripts": {
         "eslint": "npx eslint --fix .",
-        "eslint:js": "npx eslint src/*.js"
+        "eslint:js": "npx eslint src/*.js",
+        "prettier": "prettier --write ."
     },
     "source": "index.html",
     "source_electric": "index.html",

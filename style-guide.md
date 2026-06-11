@@ -33,8 +33,7 @@ The Tip Calculator should be responsive across all devices.
 --spacing-100: calc(8 / 16 * 1rem);
 --spacing-200: calc(16 / 16 * 1rem);
 --spacing-300: calc(24 / 16 * 1rem);
---spacing-400: calc(32 / 16 * 1rem):
---spacing-600: calc(48 / 16 * 1rem);
+--spacing-400: calc(32 / 16 * 1rem): --spacing-600: calc(48 / 16 * 1rem);
 --spacing-1000: calc(80 / 16 * 1rem);
 --spacing-1200: calc(96 / 16 * 1rem);
 --spacing-1500: calc(120 / 16 * 1rem);
@@ -57,11 +56,11 @@ The Tip Calculator should be responsive across all devices.
 ## Radius
 
 ```css
---radius-0: 0; 
+--radius-0: 0;
 --radius-7: 4px;
 --radius-8: 6px;
 --radius-9: 8px;
---radius-10:10px;
+--radius-10: 10px;
 --radius-11: 12px;
 --radius-12: 15px;
 --radius-13: 20px;
@@ -73,7 +72,7 @@ The Tip Calculator should be responsive across all devices.
 --radius-19: 36px;
 --radius-20: 38px;
 --radius-21: 40px;
---radius-full: 999px; 
+--radius-full: 999px;
 ```
 
 ## Favicon Links
@@ -100,6 +99,7 @@ The Tip Calculator should be responsive across all devices.
 ```
 
 ## Duration
+
 ```css
 --motion-duration: 4s;
 --motion-preferred-duration: 0.00001s;
@@ -108,9 +108,12 @@ The Tip Calculator should be responsive across all devices.
 ## Typography
 
 ```html
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+  rel="stylesheet"
+/>
 ```
 
 ```css
@@ -120,40 +123,38 @@ The Tip Calculator should be responsive across all devices.
 --font-size-text-preset-2: calc(32 / 16 * 1rem);
 --font-size-text-preset-3: calc(24 / 16 * 1rem);
 --font-size-text-preset-4: calc(20 / 16 * 1rem);
---font-size-text-preset-5: calc(16 / 16 * 1rem):
---font-size-text-preset-6: calc(13 / 16 * 1rem):
---letter-spacing-text-preset-1: calc(-1 / 16 * 1rem);
+--font-size-text-preset-5: calc(16 / 16 * 1rem): --font-size-text-preset-6:
+  calc(13 / 16 * 1rem): --letter-spacing-text-preset-1: calc(-1 / 16 * 1rem);
 --letter-spacing-text-preset-2: calc(-0.67 / 16 * 1rem);
 --line-height-text-preset-1: 1.48;
---line-height-text-preset-2: 1.47; 
---line-height-text-preset-3-5: 1.5; 
+--line-height-text-preset-2: 1.47;
+--line-height-text-preset-3-5: 1.5;
 --line-height-text-preset-6: 1.46;
 ```
 
 ## Screen Readers
 
 ```css
-	
-	/* screen readers */
-  --sr-only-width: 1px; 
-  --sr-only-height: 1px; 
-  --sr-only-padding: 0px; 
-  --sr-only-margin: -1px; 
-  --sr-only-border-width: 0; 
-  --sr-only-left: -1000px; 
-  --sr-only-top: auto;
+/* screen readers */
+--sr-only-width: 1px;
+--sr-only-height: 1px;
+--sr-only-padding: 0px;
+--sr-only-margin: -1px;
+--sr-only-border-width: 0;
+--sr-only-left: -1000px;
+--sr-only-top: auto;
 
 .sr-only {
-	position: absolute; 
-	white-space: nowrap; 
-	overflow: hidden; 
-	width: var(--sr-only-width); 
-	height: var(--sr-only-height); 
-	padding: var(--sr-only-padding);
-	margin: var(--sr-only-margin); 
-	border-width: var(--sr-only-border-width); 
-	top: var(--sr-only-top); 
-	left: var(--sr-only-left); 
+  position: absolute;
+  white-space: nowrap;
+  overflow: hidden;
+  width: var(--sr-only-width);
+  height: var(--sr-only-height);
+  padding: var(--sr-only-padding);
+  margin: var(--sr-only-margin);
+  border-width: var(--sr-only-border-width);
+  top: var(--sr-only-top);
+  left: var(--sr-only-left);
 }
 ```
 
