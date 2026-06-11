@@ -66,13 +66,83 @@
         <h1 class="sr-only" id="tip-calculator-interface">
           The Tip Calculator Interface
         </h1>
-        <form>
-          <div class="bill-wrapper"></div>
+        <!-- Most likely CSS Grid might be used here -->
+        <form id="form" novalidate>
+          <div class="bill-section">
+            <label for="bill">Bill</label>
+            <div class="bill-section__input-container">
+              <img
+                src="./assets/images/icon-naira.svg"
+                alt=""
+                aria-hidden="true"
+              />
+              <input
+                type="number"
+                id="bill"
+                name="bill"
+                placeholder="0"
+                min="1"
+              />
+            </div>
+            <p
+              id="bill-error"
+              role="alert"
+              aria-live="assertive"
+              aria-hidden="true"
+              aria-atomic="true"
+            >
+              Can't be zero
+            </p>
+          </div>
           <fieldset>
             <legend>Select Tip %</legend>
           </fieldset>
-          <div class="number-of-people-wrapper"></div>
-          <div class="results-wrapper"></div>
+          <div class="number-of-people-section">
+            <label for="number-of-people">Number of people</label>
+            <div class="number-of-people-section__input-container">
+              <img
+                src="./assets/images/icon-person.svg"
+                alt=""
+                aria-hidden="true"
+              />
+              <input
+                type="number"
+                id="number-of-people"
+                name="number-of-people"
+                placeholder="0"
+                min="1"
+                step="1"
+              />
+            </div>
+            <p
+              id="number-of-people-error"
+              role="alert"
+              aria-live="assertive"
+              aria-hidden="true"
+              aria-atomic="true"
+            >
+              Can't be zero
+            </p>
+          </div>
+          <div class="results-section">
+            <div class="result-section__wrapper">
+              <div class="result-section__wrapper-tip-amount-per-person">
+                <p class="results-section-feedback-text">
+                  <span>Tip Amount</span>
+                  <span>/ person</span>
+                </p>
+                <output>₦0.00</output>
+              </div>
+              <div class="result-section__wrapper-total-per-person">
+                <p class="results-section-feedback-text">
+                  <span>Total</span>
+                  <span>/ person</span>
+                </p>
+                <output>₦0.00</output>
+              </div>
+            </div>
+            <button type="button" class="reset-btn">Reset</button>
+          </div>
         </form>
       </section>
     </main>
