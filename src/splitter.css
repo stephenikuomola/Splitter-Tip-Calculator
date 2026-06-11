@@ -60,4 +60,29 @@
   /* Duration */
   --motion-duration: 4s;
   --motion-preferred-duration: 0.00001s;
+
+  /* Typography */
+  --ff-space-mono-monospace: var(--ff-space-mono), monospace;
+  --ff-space-mono: "Space Mono";
+  --font-size-text-preset-1: calc(48 / 16 * 1rem);
+  --font-size-text-preset-2: calc(32 / 16 * 1rem);
+  --font-size-text-preset-3: calc(24 / 16 * 1rem);
+  --font-size-text-preset-4: calc(20 / 16 * 1rem);
+  --font-size-text-preset-5: calc(16 / 16 * 1rem);
+  --font-size-text-preset-6: calc(13 / 16 * 1rem);
+  --letter-spacing-text-preset-1: calc(-1 / 16 * 1rem);
+  --letter-spacing-text-preset-2: calc(-0.67 / 16 * 1rem);
+  --line-height-text-preset-1: 1.48;
+  --line-height-text-preset-2: 1.47;
+  --line-height-text-preset-3-5: 1.5;
+  --line-height-text-preset-6: 1.46;
+
+  /* Screen Readers */
+  --sr-only-width: 1px;
+  --sr-only-height: 1px;
+  --sr-only-padding: 0px;
+  --sr-only-margin: -1px;
+  --sr-only-border-width: 0;
+  --sr-only-left: -1000px;
+  --sr-only-top: auto;
 }
