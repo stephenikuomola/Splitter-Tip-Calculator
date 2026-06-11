@@ -30,13 +30,36 @@
     <!-- Open Graphs  -->
 
     <!-- CSS Links -->
-    <link rel="stylesheet" href="src/devfinder.css" />
+    <link rel="stylesheet" href="src/splitter.css" />
 
     <!-- JavaScript Links -->
-    <script src="src/devfinder.js" type="module"></script>
+    <script src="src/splitter.js" type="module"></script>
 
     <!-- Title -->
     <title>Splitter</title>
   </head>
-  <body></body>
+  <body>
+    <main id="app">
+      <header>
+        <!--
+         TODO 
+         Do not forget to add the link to the page when deployed in Netlify
+        -->
+        <a class="logo" href="#">
+          <img class="logo_img" alt="The tip calculator logo" src="./assets/images/logo.svg"/>
+        </a>
+      </header>
+      <section class="calcultor-interface" aria-labelledby="tip-calculator-interface">
+        <h1 class="sr-only" id="tip-calculator-interface">The Tip Calculator Interface</h1>
+        <form>
+          <div class="bill-wrapper"></div>
+          <fieldset>
+            <legend>Select Tip %</legend>
+          </fieldset>
+          <div class="number-of-people-wrapper"></div>
+          <div class="results-wrapper"></div>
+        </form>
+      </section>
+    </main>
+  </body>
 </html>
