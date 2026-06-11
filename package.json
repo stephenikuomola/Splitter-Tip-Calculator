@@ -33,7 +33,8 @@
     "scripts": {
         "eslint": "npx eslint --fix .",
         "eslint:js": "npx eslint src/*.js",
-        "prettier": "prettier --write ."
+        "prettier": "prettier --write .",
+        "start": "parcel index.html"
     },
     "source": "index.html",
     "source_electric": "index.html",
