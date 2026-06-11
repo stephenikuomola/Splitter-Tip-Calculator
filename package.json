@@ -37,6 +37,5 @@
         "start": "parcel index.html"
     },
     "source": "index.html",
-    "source_electric": "index.html",
     "version": "1.0.0"
 }
