@@ -124,8 +124,9 @@ The Tip Calculator should be responsive across all devices.
 --font-size-text-preset-2: calc(32 / 16 * 1rem);
 --font-size-text-preset-3: calc(24 / 16 * 1rem);
 --font-size-text-preset-4: calc(20 / 16 * 1rem);
---font-size-text-preset-5: calc(16 / 16 * 1rem): --font-size-text-preset-6:
-  calc(13 / 16 * 1rem): --letter-spacing-text-preset-1: calc(-1 / 16 * 1rem);
+--font-size-text-preset-5: calc(16 / 16 * 1rem);
+--font-size-text-preset-6: calc(13 / 16 * 1rem);
+--letter-spacing-text-preset-1: calc(-1 / 16 * 1rem);
 --letter-spacing-text-preset-2: calc(-0.67 / 16 * 1rem);
 --line-height-text-preset-1: 1.48;
 --line-height-text-preset-2: 1.47;
@@ -304,6 +305,20 @@ legend {
   padding: 0;
   border: 0;
   min-inline-size: 0;
+}
+
+/* For screen readers only */
+.sr-only {
+  position: absolute;
+  white-space: nowrap;
+  overflow: hidden;
+  width: var(--sr-only-width);
+  height: var(--sr-only-height);
+  padding: var(--sr-only-padding);
+  margin: var(--sr-only-margin);
+  border-width: var(--sr-only-border-width);
+  top: var(--sr-only-top);
+  left: var(--sr-only-left);
 }
 
 /* Remove all animations and transitions for people that prefer not to see them */
