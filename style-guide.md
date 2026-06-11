@@ -33,7 +33,8 @@ The Tip Calculator should be responsive across all devices.
 --spacing-100: calc(8 / 16 * 1rem);
 --spacing-200: calc(16 / 16 * 1rem);
 --spacing-300: calc(24 / 16 * 1rem);
---spacing-400: calc(32 / 16 * 1rem): --spacing-600: calc(48 / 16 * 1rem);
+--spacing-400: calc(32 / 16 * 1rem): 
+--spacing-600: calc(48 / 16 * 1rem);
 --spacing-1000: calc(80 / 16 * 1rem);
 --spacing-1200: calc(96 / 16 * 1rem);
 --spacing-1500: calc(120 / 16 * 1rem);
@@ -133,9 +134,7 @@ The Tip Calculator should be responsive across all devices.
 ```
 
 ## Screen Readers
-
 ```css
-/* screen readers */
 --sr-only-width: 1px;
 --sr-only-height: 1px;
 --sr-only-padding: 0px;
@@ -227,14 +226,18 @@ picture,
 video,
 canvas,
 svg {
-  max-width: 100%;
+  max-inline-size: 100%;
   height: auto;
   display: var(--block);
 }
 
+img {
+  object-fit: cover;
+}
+
 body {
-  width: 100%;
-  min-height: 100vh;
+  inline-size: 100%;
+  min-block-size: 100svh;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow: hidden;
@@ -291,6 +294,14 @@ a:not([class]) {
 /* Anything that has been anchored to should have an extra scroll margin */
 :target {
   scroll-margin-block: 5ex;
+}
+
+/* A simple reset for the fieldset and legend */
+fieldset, legend {
+	margin: 0;
+  padding: 0;
+  border: 0;
+  min-inline-size: 0;
 }
 
 /* Remove all animations and transitions for people that prefer not to see them */
