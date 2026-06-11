@@ -1,0 +1,63 @@
+:root {
+  /* Colors */
+  --black: hsl(0, 0%, 0%);
+  --white: hsl(0, 100%, 100%);
+  --orange: hsl(13, 70%, 60%);
+  --green-200: hsl(173, 61%, 77%);
+  --green-400: hsl(172, 67%, 45%);
+  --green-750: hsl(183, 79%, 24%);
+  --green-800: hsl(183, 85%, 21%);
+  --green-900: hsl(183, 100%, 15%);
+  --grey-50: hsl(189, 47%, 97%);
+  --grey-200: hsl(185, 41%, 84%);
+  --grey-300: hsl(184, 19%, 68%);
+  --grey-400: hsl(184, 14%, 56%);
+  --grey-500: hsl(186, 14%, 43%);
+  --grey-550: hsl(180, 18%, 40%);
+  --grey-600: hsl(180, 25%, 32%);
+
+  /* Spacing */
+  --spacing-0: calc(0 / 16 * 1rem);
+  --spacing-100: calc(8 / 16 * 1rem);
+  --spacing-200: calc(16 / 16 * 1rem);
+  --spacing-300: calc(24 / 16 * 1rem);
+  --spacing-400: calc(32 / 16 * 1rem);
+  --spacing-600: calc(48 / 16 * 1rem);
+  --spacing-1000: calc(80 / 16 * 1rem);
+  --spacing-1200: calc(96 / 16 * 1rem);
+  --spacing-1500: calc(120 / 16 * 1rem);
+  --spacing-1600: calc(128 / 16 * 1rem);
+
+  /* Display */
+  --hidden: none;
+  --block: block;
+  --inline: inline;
+  --inline-block: inline-block;
+  --flex: flex;
+  --inline-flex: inline-flex;
+  --grid: grid;
+  --inline-grid: inline-grid;
+
+  /* Radius */
+  --radius-0: 0;
+  --radius-7: 4px;
+  --radius-8: 6px;
+  --radius-9: 8px;
+  --radius-10: 10px;
+  --radius-11: 12px;
+  --radius-12: 15px;
+  --radius-13: 20px;
+  --radius-14: 24px;
+  --radius-15: 26px;
+  --radius-16: 28px;
+  --radius-17: 30px;
+  --radius-18: 34px;
+  --radius-19: 36px;
+  --radius-20: 38px;
+  --radius-21: 40px;
+  --radius-full: 999px;
+
+  /* Duration */
+  --motion-duration: 4s;
+  --motion-preferred-duration: 0.00001s;
+}

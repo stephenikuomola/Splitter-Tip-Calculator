@@ -33,7 +33,7 @@ The Tip Calculator should be responsive across all devices.
 --spacing-100: calc(8 / 16 * 1rem);
 --spacing-200: calc(16 / 16 * 1rem);
 --spacing-300: calc(24 / 16 * 1rem);
---spacing-400: calc(32 / 16 * 1rem): 
+--spacing-400: calc(32 / 16 * 1rem);
 --spacing-600: calc(48 / 16 * 1rem);
 --spacing-1000: calc(80 / 16 * 1rem);
 --spacing-1200: calc(96 / 16 * 1rem);
@@ -134,6 +134,7 @@ The Tip Calculator should be responsive across all devices.
 ```
 
 ## Screen Readers
+
 ```css
 --sr-only-width: 1px;
 --sr-only-height: 1px;
@@ -297,8 +298,9 @@ a:not([class]) {
 }
 
 /* A simple reset for the fieldset and legend */
-fieldset, legend {
-	margin: 0;
+fieldset,
+legend {
+  margin: 0;
   padding: 0;
   border: 0;
   min-inline-size: 0;
