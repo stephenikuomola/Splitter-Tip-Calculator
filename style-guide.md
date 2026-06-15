@@ -256,12 +256,13 @@ button {
   cursor: pointer;
 }
 
-/* Inherits fonts for input and buttons */
+/* Inherits fonts for input, textarea, select */
 input,
-button,
 textarea,
 select {
   font: inherit;
+  max-inline-size: 100%;
+  inline-size: 100%
 }
 
 /* Remove the text-decoration style for all anchor elements */
@@ -305,6 +306,44 @@ legend {
   padding: 0;
   border: 0;
   min-inline-size: 0;
+}
+
+/* Set all the input elements with a type attribute and exact attribute values listed to have a width of auto */
+input[type="checkbox"],
+input[type="radio"],
+input[type="submit"],
+input[type="button"] {
+	inline-size: auto; 
+}
+
+/* Little increment and decrement buttons that appear on number input fields when selected should be removed. */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button, {
+	appearance: none;
+}
+
+input[type="number"] {
+	-moz-appearance: textfield; 
+}
+
+/* Customize the arrow for a select element */
+select {
+  /* The placeholder color */
+  /* color: black */
+
+	/* hides the native UI */
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none; 
+	
+	/* prevents input text from running into the background image */
+	padding-inline-end: 1.5em; 
+
+	/* Using a background image to customize the arrow for the select */
+	background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 8" fill="none" stroke="black"><path d="M7.5 3L4 6 .5 3"/></svg>');
+	background-size: 0.7em;
+	background-repeat: no-repeat;
+	background-position: calc(100% - 0.5em) 50%;
 }
 
 /* For screen readers only */
